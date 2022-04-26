@@ -4,7 +4,7 @@
 updateTitle()
 
 const WalletConnect = window.WalletConnect
-const WalletConnectQRCodeModal = window.WalletConnectQRCodeModal.default
+const WalletConnectQRCodeModal = window.WalletConnectQRCodeModal
 
 const bridge = 'https://bridge.walletconnect.org'
 
