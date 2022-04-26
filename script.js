@@ -2,9 +2,8 @@
 
 // updates title to display package version
 updateTitle()
-
-const WalletConnect = window.NodeWalletConnect
-const WalletConnectQRCodeModal = window.WalletConnectQRCodeModal
+import NodeWalletConnect from "@walletconnect/node";
+import WalletConnectQRCodeModal from "@walletconnect/qrcode-modal";
 
 const bridge = 'https://bridge.walletconnect.org'
 
