@@ -3,7 +3,7 @@
 // updates title to display package version
 updateTitle()
 
-const WalletConnect = window.WalletConnect
+const WalletConnect = window.NodeWalletConnect
 const WalletConnectQRCodeModal = window.WalletConnectQRCodeModal
 
 const bridge = 'https://bridge.walletconnect.org'
@@ -12,7 +12,7 @@ let walletConnector = null
 
 function onInit() {
   // Create a walletConnector
-  walletConnector = new WalletConnect({
+  walletConnector = new NodeWalletConnect({
     bridge: 'https://bridge.walletconnect.org' // Required
   })
 
