@@ -3,7 +3,7 @@
 // updates title to display package version
 updateTitle()
 
-const WalletConnect = window.WalletConnect.default
+const WalletConnect = window.WalletConnect
 const WalletConnectQRCodeModal = window.WalletConnectQRCodeModal.default
 
 const bridge = 'https://bridge.walletconnect.org'
