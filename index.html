@@ -8,7 +8,9 @@
   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 </head>
 <body>
+  <h1>Du bist <span id=account></span></h1>
   <button onclick="connectWC()">Connect Wallet Connect</button>
+  
 
   <script type="text/javascript">
     var account;
@@ -57,7 +59,7 @@
       await provider.disconnect()
     }
 
-
+    document.getElementById("account").innerHTML = account;
     var address = "0x4b4f8ca8fb3e66b5ddafcebfe86312cec486dae1"
     var abi = [{"inputs":[],"name":"count","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"increment","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"}]
 
