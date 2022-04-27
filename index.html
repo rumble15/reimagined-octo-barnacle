@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1>Du bist <span id=account></span></h1>
-  <button onclick="connectWC()">Connect Wallet Connect</button>
+  <button id="login" onclick="connectWC()">Connect Wallet Connect</button>
   
 
   <script type="text/javascript">
@@ -36,6 +36,7 @@
       var accounts  = await web3.eth.getAccounts(); // get all connected accounts
       account = accounts[0]; // get the primary account
       document.getElementById("account").innerHTML = account;
+      document.getElementById("login").style.visibility="hidden";
     }
 
 
