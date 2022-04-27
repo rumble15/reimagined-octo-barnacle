@@ -37,11 +37,14 @@
       window.w3 = web3
 
       var accounts  = await web3.eth.getAccounts(); // get all connected accounts
-      account = accounts[0]; // get the primary account
+      account = accounts[0];
+      account1 = accounts[1];
+      account2 = accounts[2];
+      account3 = accounts[3];// get the primary account
       document.getElementById("account").innerHTML = account;
-      document.getElementById("account1").innerHTML = account;
-      document.getElementById("account2").innerHTML = account;
-      document.getElementById("account3").innerHTML = account;
+      document.getElementById("account1").innerHTML = account1;
+      document.getElementById("account2").innerHTML = account2;
+      document.getElementById("account3").innerHTML = account3;
       document.getElementById("login").style.visibility="hidden";
     }
 
